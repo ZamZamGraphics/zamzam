@@ -13,7 +13,7 @@ function Navbar() {
       <button className="p-3 sm:hidden" onClick={() => setOpen(!open)}>
         <IconMenu2 stroke={1} />
       </button>
-      <ul className={`nav-item ${open ? "" : "hidden sm:flex"}`}>
+      <ul className={`nav-item sm:flex ${open ? "" : "hidden"}`}>
         <li>
           <Link
             className={`nav-link ${pathname === "/" ? "nav-active" : ""}`}

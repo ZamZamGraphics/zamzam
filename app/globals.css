@@ -4,13 +4,13 @@
 
 @layer components {
   .nav-item {
-    @apply flex basis-auto flex-col sm:flex-row text-xl;
+    @apply flex basis-auto flex-col sm:flex-row text-xl animate-fade-left;
   }
   .nav-link {
     @apply block p-2 sm:p-3 transition-all duration-300;
   }
   .nav-active {
-    @apply font-bold;
+    @apply font-medium text-slate-900;
   }
 }
 

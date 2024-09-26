@@ -7,16 +7,16 @@ module.exports = {
   ],
   theme: {
     container: {
-      center: true
+      center: true,
     },
     screens: {
-      'sm': '576px',
-      'md': '768px',
-      'lg': '992px',
-      'xl': '1200px',
-      '2xl': '1400px',
+      sm: "576px",
+      md: "768px",
+      lg: "992px",
+      xl: "1200px",
+      "2xl": "1400px",
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animated")],
 };

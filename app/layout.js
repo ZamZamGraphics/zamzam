@@ -1,10 +1,9 @@
 import Header from "@/app/components/Header";
-import { Roboto } from "next/font/google";
+import { Jost } from "next/font/google";
 import "./globals.css";
 
-const roboto = Roboto({
-  weight: ["400", "700"],
-  style: ["normal", "italic"],
+const jost = Jost({
+  weight: ["300", "500", "700"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -17,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} bg-sky-100`}>
+      <body className={`${jost.className} bg-sky-100 text-base font-light text-slate-500`}>
         <Header />
         {children}
       </body>
