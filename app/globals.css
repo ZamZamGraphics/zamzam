@@ -12,6 +12,14 @@
   .nav-active {
     @apply font-medium text-slate-900;
   }
+  .border-gradient {
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(to top, #b6dbf4, #b6dbf400) border-box;
+    border: 3px solid transparent;
+  }
+  .service-box {
+    @apply p-6 bg-white text-center shadow rounded-2xl hover:cursor-pointer hover:bg-gradient-to-t from-white to-[#B6DBF4] animate-fade-down;
+  }
 }
 
 @media only screen and (max-width: 576px) {
