@@ -1,5 +1,6 @@
 import Header from "@/app/components/Header";
 import { Jost } from "next/font/google";
+import "animate.css";
 import "./globals.css";
 
 const jost = Jost({
@@ -16,7 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${jost.className} bg-sky-100 text-base font-light text-slate-500`}>
+      <body
+        className={`${jost.className} bg-sky-100 text-base font-light text-slate-500`}
+      >
         <Header />
         {children}
       </body>

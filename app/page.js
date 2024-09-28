@@ -5,17 +5,17 @@ export default function Home() {
     <>
       <div className="container py-10 sm:py-32">
         <div className="flex w-full gap-10 flex-col md:flex-row items-center">
-          <div className="basis-2/4 animate-fade-right px-5">
+          <div className="basis-2/4 animate__animated animate__fadeInLeft px-5">
             <span className="px-3 py-1 text-base md:text-xl rounded-full bg-lime-500 text-white">
               Best Web Design Company in Brahmanbaria
             </span>
-            <h2 className="mt-4 text-2xl md:text-3xl lg:text-5xl text-slate-900 uppercase animate-fade-right animate-delay-150">
+            <h2 className="mt-4 text-2xl md:text-3xl lg:text-5xl text-slate-900 uppercase animate__animated animate__fadeInLeft">
               WE CREATE INNOVATIVE
             </h2>
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black uppercase text-blue-500 animate-fade-right animate-delay-300">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black uppercase text-blue-500 animate__animated animate__fadeInLeft">
               WEB <span className="text-lime-500">SOLUTIONS</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl lg:text-5xl text-slate-900 uppercase animate-fade-right animate-delay-500">
+            <h2 className="text-2xl md:text-3xl lg:text-5xl text-slate-900 uppercase animate__animated animate__fadeInLeft">
               WITH LATEST TECHNOLOGIES
             </h2>
             <p className="mt-5 text-xl">
@@ -24,7 +24,7 @@ export default function Home() {
               you to scale up your business.
             </p>
           </div>
-          <div className="flex basis-2/4 items-center justify-center p-10 animate-fade-left">
+          <div className="flex basis-2/4 items-center justify-center p-10 animate__animated animate__fadeInRight">
             <Image src={WebdevPhoto} width={400} alt="Web Development" />
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function Home() {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
-          <div className="service-box border-gradient">
+          <div className="service-box border-gradient animate__animated animate__fadeInDown">
             <div>images</div>
             <h3 className="text-xl my-2 font-medium text-slate-900">
               Website Design

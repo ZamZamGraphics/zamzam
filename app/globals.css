@@ -4,7 +4,7 @@
 
 @layer components {
   .nav-item {
-    @apply flex basis-auto flex-col sm:flex-row text-xl animate-fade-left;
+    @apply flex basis-auto flex-col sm:flex-row text-xl;
   }
   .nav-link {
     @apply block p-2 sm:p-3 transition-all duration-300;
@@ -18,7 +18,7 @@
     border: 3px solid transparent;
   }
   .service-box {
-    @apply p-6 bg-white text-center shadow rounded-2xl hover:cursor-pointer hover:bg-gradient-to-t from-white to-[#B6DBF4] animate-fade-down;
+    @apply p-6 bg-white text-center shadow rounded-2xl hover:cursor-pointer hover:bg-gradient-to-t from-white to-[#B6DBF4];
   }
 }
 

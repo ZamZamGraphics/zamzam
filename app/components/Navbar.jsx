@@ -13,7 +13,11 @@ function Navbar() {
       <button className="p-3 sm:hidden" onClick={() => setOpen(!open)}>
         <IconMenu2 stroke={1} />
       </button>
-      <ul className={`nav-item sm:flex ${open ? "" : "hidden"}`}>
+      <ul
+        className={`nav-item animate__animated animate__fadeInRight sm:flex ${
+          open ? "" : "hidden"
+        }`}
+      >
         <li>
           <Link
             className={`nav-link ${pathname === "/" ? "nav-active" : ""}`}
