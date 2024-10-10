@@ -3,12 +3,12 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 225 65" style="enable-background:new 0 0 225 65;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#84cc16;}
-	.st1{fill:#0072BC;}
+	.st0{fill:#a3e635;}
+	.st1{fill:#3b82f6;}
 	.st2{fill:url(#_Path__1_);}
 	.st3{fill:url(#_Path_2_1_);}
 	.st4{fill:#FFFFFF;}
-	.st5{fill:#282C36;}
+	.st5{fill:#f9fafb;}
 </style>
 <title>header_logo</title>
 <g id="_Group_">
@@ -29,7 +29,7 @@
 		
 			<linearGradient id="_Path_2_1_" gradientUnits="userSpaceOnUse" x1="32.6479" y1="751.6994" x2="23.5479" y2="783.9594" gradientTransform="matrix(1 0 0 1 0 -721)">
 			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
-			<stop  offset="1" style="stop-color:#020202"/>
+			<stop  offset="1" style="stop-color:#f9fafb"/>
 		</linearGradient>
 		<ellipse id="_Path_2" class="st3" cx="32.1" cy="32.5" rx="22.1" ry="21.7"/>
 		<polygon id="_Path_3" class="st4" points="15,21.4 13.3,32.6 28.8,23.3 17.8,62.7 48.7,44.2 50.9,32.6 34.5,41.8 45.3,2.3 		"/>

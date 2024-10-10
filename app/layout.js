@@ -1,6 +1,7 @@
+import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
-import { Jost } from "next/font/google";
 import "animate.css";
+import { Jost } from "next/font/google";
 import "./globals.css";
 
 const jost = Jost({
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

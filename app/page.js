@@ -7,6 +7,7 @@ import Image from "next/image";
 import Animated from "./components/Animated";
 
 export default function Home() {
+  // getDeviceInfo();
   return (
     <>
       <div className="container py-10 sm:py-32">
@@ -56,7 +57,7 @@ export default function Home() {
             Being a Best Website Design Company in Brahmanbaria
           </p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
+        <div className="px-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           <Animated
             classes="service-box border-gradient"
             animateClass="animate__fadeInDown"
