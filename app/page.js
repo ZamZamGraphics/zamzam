@@ -1,10 +1,11 @@
-import EcommerceIcon from "@/public/icons/ecommerce.png";
-import GraphicDesignIcon from "@/public/icons/graphic-design.png";
-import ServerIcon from "@/public/icons/server.png";
-import WebDesignIcon from "@/public/icons/web-design.png";
+import Animated from "@/app/components/Animated";
+import Services from "@/app/components/Services";
+import StarRating from "@/app/components/StarRating";
+import ProjectPhoto from "@/public/images/almadinait.jpg";
+import ClientPhoto from "@/public/images/hazary.jpg";
 import WebdevPhoto from "@/public/images/webdev.png";
 import Image from "next/image";
-import Animated from "./components/Animated";
+import Link from "next/link";
 
 export default function Home() {
   // getDeviceInfo();
@@ -14,23 +15,23 @@ export default function Home() {
         <div className="flex w-full gap-10 flex-col md:flex-row items-center">
           <div className="basis-2/4 px-5">
             <Animated animateClass="animate__fadeInLeft">
-              <span className="px-3 py-1 text-base md:text-xl rounded-full bg-lime-500 text-white">
+              <span className="px-3 py-1 text-base md:text-xl font-medium rounded-full bg-black text-white">
                 Best Web Design Company in Brahmanbaria
               </span>
             </Animated>
             <Animated animateClass="animate__fadeInLeft animate__delay-200ms">
-              <h2 className="mt-4 text-2xl md:text-3xl lg:text-5xl text-slate-900 uppercase ">
-                WE CREATE INNOVATIVE
+              <h2 className="mt-4 text-2xl md:text-3xl lg:text-5xl text-slate-900 font-bold">
+                We Create Innovative
               </h2>
             </Animated>
             <Animated animateClass="animate__fadeInLeft animate__delay-300ms">
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-black uppercase text-blue-500 ">
-                WEB <span className="text-lime-500">SOLUTIONS</span>
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-black ">
+                Web <span className="text-black">Solutions</span>
               </h1>
             </Animated>
             <Animated animateClass="animate__fadeInLeft animate__delay-500ms">
-              <h2 className="text-2xl md:text-3xl lg:text-5xl text-slate-900 uppercase ">
-                WITH LATEST TECHNOLOGIES
+              <h2 className="text-2xl md:text-3xl lg:text-5xl text-black font-bold">
+                With Latest Technologies
               </h2>
             </Animated>
             <p className="mt-5 text-xl">
@@ -49,79 +50,213 @@ export default function Home() {
       </div>
       <div className="container py-10">
         <div className="text-center my-5">
-          <h3 className="text-3xl text-slate-900">
-            Awsome Service{" "}
-            <span className="font-medium text-blue-500">We Provide</span>
+          <h3 className="text-3xl text-black font-bold">
+            Awsome Service We Provide
           </h3>
           <p className="text-sm">
             Being a Best Website Design Company in Brahmanbaria
           </p>
         </div>
         <div className="px-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-          <Animated
-            classes="service-box border-gradient"
-            animateClass="animate__fadeInDown"
-          >
-            <div className="p-5 flex items-center justify-center">
-              <Image src={WebDesignIcon} width={80} alt="Web Design" />
+          <Services />
+        </div>
+      </div>
+      <div className="container py-10 px-5">
+        <div className="w-full md:w-3/4 text-center bg-sky-100 mx-auto p-10 rounded-2xl">
+          <h3 className="text-3xl text-black font-bold">About us</h3>
+          <p className="p-3">
+            Our company specializes in creating visually stunning and highly
+            functional websites that elevate brands and enhance user
+            experiences. We combine innovative graphic design with expert web
+            development to deliver tailored solutions that meet our clients
+            unique needs. Our team of skilled designers and developers
+            collaborates closely to ensure cohesive branding, responsive
+            layouts, and optimal performance across all devices. Whether you’re
+            a startup or an established business, we are dedicated to helping
+            you establish a compelling online presence that drives engagement
+            and growth.
+          </p>
+        </div>
+      </div>
+      <div className="container py-10 px-5">
+        <div className="text-center my-5">
+          <h3 className="text-3xl text-black font-bold">
+            ZamZam Devs at A Glance
+          </h3>
+        </div>
+        <div className="px-5 grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid gap-5">
+            <div className="rounded-lg overflow-hidden">
+              <Image
+                src={ProjectPhoto}
+                alt="Project Title"
+                className="duration-500 hover:scale-105"
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
             </div>
-            <h3 className="text-xl my-2 font-medium text-slate-900">
-              Website Design
-            </h3>
-            <p className="text-sm">
-              Website Design and Development is investable for any type of
-              business regardless the size of the business whether is a small
-              business enterprise or large corporate house.
-            </p>
-          </Animated>
-          <Animated
-            classes="service-box border-gradient"
-            animateClass="animate__fadeInDown animate__delay-200ms"
-          >
-            <div className="p-5 flex items-center justify-center">
-              <Image src={ServerIcon} width={80} alt="Web Design" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div className="rounded-lg overflow-hidden">
+                <Image
+                  src={ProjectPhoto}
+                  alt="Project Title"
+                  className="duration-500 hover:scale-105"
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </div>
+              <div className="rounded-lg overflow-hidden">
+                <Image
+                  src={ProjectPhoto}
+                  alt="Project Title"
+                  className="duration-500 hover:scale-105"
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </div>
             </div>
-            <h3 className="text-xl my-2 font-medium text-slate-900">
-              Domain & Hosting
-            </h3>
-            <p className="text-sm">
-              We provide top class Domain & Hosting which can be purchase or
-              renew online buy using 100% secure payment gateways. We accept any
-              local currency card.
-            </p>
-          </Animated>
-          <Animated
-            classes="service-box border-gradient"
-            animateClass="animate__fadeInDown animate__delay-300ms"
-          >
-            <div className="p-5 flex items-center justify-center">
-              <Image src={EcommerceIcon} width={80} alt="Web Design" />
+          </div>
+          <div className="grid gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div className="rounded-lg overflow-hidden">
+                <Image
+                  src={ProjectPhoto}
+                  alt="Project Title"
+                  className="duration-500 hover:scale-105"
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </div>
+              <div className="rounded-lg overflow-hidden">
+                <Image
+                  src={ProjectPhoto}
+                  alt="Project Title"
+                  className="duration-500 hover:scale-105"
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </div>
             </div>
-            <h3 className="text-xl my-2 font-medium text-slate-900">
-              Ecommerce Website
-            </h3>
-            <p className="text-sm">
-              eCommerce Website business opportunity is huge in Bangladesh,
-              Anyone could earn a huge amount of revenue from a Ecommerce
-              Website using different platform.
-            </p>
-          </Animated>
-          <Animated
-            classes="service-box border-gradient"
-            animateClass="animate__fadeInDown animate__delay-500ms"
-          >
-            <div className="p-5 flex items-center justify-center">
-              <Image src={GraphicDesignIcon} width={80} alt="Web Design" />
+            <div className="rounded-lg overflow-hidden">
+              <Image
+                src={ProjectPhoto}
+                alt="Project Title"
+                className="duration-500 hover:scale-105"
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
             </div>
-            <h3 className="text-xl my-2 font-medium text-slate-900">
-              Graphics Design
-            </h3>
-            <p className="text-sm">
-              Graphic Design is now a day’s very necessary one. The demand of
-              the Graphic Design is rising day by day due to the market boom of
-              e-commerce and digital marketing.
-            </p>
+          </div>
+        </div>
+      </div>
+      <div className="container py-10 px-5">
+        <div className="text-center my-5">
+          <h3 className="text-3xl text-black font-bold">
+            Why You Should Hire Us?
+          </h3>
+          <p className="max-w-[500px] mx-auto text-sm">
+            Because we care and try to provide the best customer satisfaction.
+            If you become a customer of RajTech, you will enjoy the following
+            advantages:
+          </p>
+        </div>
+      </div>
+      <div className="container py-10 px-5">
+        <div className="text-center my-5">
+          <h3 className="text-3xl text-black font-bold">
+            Our Happy Clients Feedback
+          </h3>
+          <p className="text-sm">Try To Understand Users Expectation</p>
+        </div>
+        <div className="px-5 grid grid-cols-1 md:grid-cols-2 gap-5">
+          <Animated animateClass="animate__fadeInLeft">
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-7 bg-white p-8 shadow-lg rounded-2xl">
+              <div className="relative">
+                <div className="size-24 absolute z-10 top-0 right-0 rounded-full border-4 overflow-hidden border-gray-50">
+                  <Image src={ClientPhoto} alt="Client Photo" />
+                </div>
+                <div className="size-24 mt-3 mr-3 rounded-2xl bg-lime-500 -rotate-[12deg]"></div>
+              </div>
+              <div>
+                <h4 className="text-xl text-black font-medium">
+                  Sarowar Hazary Polash
+                </h4>
+                <span>Founder and CEO : OVIZAN</span>
+                <p className="my-4">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industrys
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+                <div className="flex items-start gap-2">
+                  <StarRating rating={5} />
+                </div>
+              </div>
+            </div>
           </Animated>
+          <Animated animateClass="animate__fadeInRight">
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-7 bg-white p-8 shadow-lg rounded-2xl">
+              <div className="relative">
+                <div className="size-24 absolute z-10 top-0 right-0 rounded-full border-4 overflow-hidden border-gray-50">
+                  <Image src={ClientPhoto} alt="Client Photo" />
+                </div>
+                <div className="size-24 mt-3 mr-3 rounded-2xl bg-lime-500 -rotate-[12deg]"></div>
+              </div>
+              <div>
+                <h4 className="text-xl text-black font-medium">
+                  Sarowar Hazary Polash
+                </h4>
+                <span>Founder and CEO : OVIZAN</span>
+                <p className="my-4">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industrys
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+                <div className="flex items-start gap-2">
+                  <StarRating rating={5} />
+                </div>
+              </div>
+            </div>
+          </Animated>
+        </div>
+      </div>
+      <div className="container py-10 px-5">
+        <div className="w-full md:w-3/4 text-center bg-black mx-auto p-10 rounded-2xl">
+          <h3 className="text-3xl text-white font-medium">
+            Have any question about us or get a product request?
+          </h3>
+          <h4 className="text-2xl text-gray-300">
+            Dont hesitate to contact us
+          </h4>
+          <div className="mt-10">
+            <Link
+              className="px-8 py-3 font-normal bg-gray-100 hover:bg-gray-200 rounded-full"
+              href="https://wa.me/+8801716426093?text=Assalamu%20Alaikum"
+            >
+              Request For Quote
+            </Link>
+          </div>
         </div>
       </div>
     </>

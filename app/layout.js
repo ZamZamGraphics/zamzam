@@ -1,11 +1,17 @@
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import "animate.css";
-import { Jost } from "next/font/google";
+import { Bricolage_Grotesque, Jost } from "next/font/google";
 import "./globals.css";
 
 const jost = Jost({
   weight: ["300", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const bricolage = Bricolage_Grotesque({
+  weigth: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -19,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${jost.className} bg-sky-100 text-base font-light text-slate-500`}
+        className={`${bricolage.className} text-base font-light text-slate-600`}
       >
         <Header />
         {children}

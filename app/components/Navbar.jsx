@@ -1,12 +1,9 @@
-"use client";
+import NavItem from "@/app/components/NavItem";
 import { IconMenu2 } from "@tabler/icons-react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
-  const pathname = usePathname();
 
   return (
     <>
@@ -19,44 +16,24 @@ function Navbar() {
         }`}
       >
         <li>
-          <Link
-            className={`nav-link ${pathname === "/" ? "nav-active" : ""}`}
-            href="/"
-            onClick={() => setOpen(false)}
-          >
+          <NavItem path="/" setOpen={setOpen}>
             Home
-          </Link>
+          </NavItem>
         </li>
         <li>
-          <Link
-            className={`nav-link ${pathname === "/about" ? "nav-active" : ""}`}
-            href="/about"
-            onClick={() => setOpen(false)}
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            className={`nav-link ${
-              pathname === "/services" ? "nav-active" : ""
-            }`}
-            href="/services"
-            onClick={() => setOpen(false)}
-          >
+          <NavItem path="/services" setOpen={setOpen}>
             Services
-          </Link>
+          </NavItem>
         </li>
         <li>
-          <Link
-            className={`nav-link ${
-              pathname === "/contact" ? "nav-active" : ""
-            }`}
-            href="/contact"
-            onClick={() => setOpen(false)}
-          >
-            Contuct Us
-          </Link>
+          <NavItem path="/about" setOpen={setOpen}>
+            About
+          </NavItem>
+        </li>
+        <li>
+          <NavItem path="/contact" setOpen={setOpen}>
+            Contact Us
+          </NavItem>
         </li>
       </ul>
     </>
