@@ -23,8 +23,12 @@
       linear-gradient(to top, #b6dbf4, #b6dbf400) border-box;
     border: 3px solid transparent;
   }
+  .scale-general {
+    @apply transition-all ease-in-out delay-150 duration-300 hover:translate-y-1 hover:scale-110;
+  }
+
   .service-box {
-    @apply p-6 bg-white text-center shadow rounded-2xl hover:cursor-pointer hover:bg-gradient-to-t from-white to-[#B6DBF4];
+    @apply p-6 bg-white text-center rounded-2xl border border-b-4 border-blue-100 transition-all ease-in-out delay-150 duration-300 hover:cursor-pointer hover:shadow-xl;
   }
 
   .animate__delay-75ms {

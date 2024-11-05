@@ -8,10 +8,7 @@ import Image from "next/image";
 function Services() {
   return (
     <>
-      <Animated
-        classes="service-box border-gradient"
-        animateClass="animate__fadeInDown"
-      >
+      <Animated classes="service-box" animateClass="animate__fadeInRight">
         <div className="p-5 flex items-center justify-center">
           <Image src={WebDesignIcon} width={80} alt="Web Design" />
         </div>
@@ -25,8 +22,8 @@ function Services() {
         </p>
       </Animated>
       <Animated
-        classes="service-box border-gradient"
-        animateClass="animate__fadeInDown animate__delay-200ms"
+        classes="service-box"
+        animateClass="animate__fadeInRight animate__delay-200ms"
       >
         <div className="p-5 flex items-center justify-center">
           <Image src={ServerIcon} width={80} alt="Web Design" />
@@ -41,8 +38,8 @@ function Services() {
         </p>
       </Animated>
       <Animated
-        classes="service-box border-gradient"
-        animateClass="animate__fadeInDown animate__delay-300ms"
+        classes="service-box"
+        animateClass="animate__fadeInRight animate__delay-300ms"
       >
         <div className="p-5 flex items-center justify-center">
           <Image src={EcommerceIcon} width={80} alt="Web Design" />
@@ -57,8 +54,8 @@ function Services() {
         </p>
       </Animated>
       <Animated
-        classes="service-box border-gradient"
-        animateClass="animate__fadeInDown animate__delay-500ms"
+        classes="service-box"
+        animateClass="animate__fadeInRight animate__delay-500ms"
       >
         <div className="p-5 flex items-center justify-center">
           <Image src={GraphicDesignIcon} width={80} alt="Web Design" />
