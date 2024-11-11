@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    @apply scroll-smooth;
-  }
-}
-
 @layer components {
   .nav-item {
     @apply flex basis-auto flex-col sm:flex-row text-xl;
