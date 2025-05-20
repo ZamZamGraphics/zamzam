@@ -11,9 +11,8 @@ function Navbar() {
         <IconMenu2 stroke={1} />
       </button>
       <ul
-        className={`nav-item animate__animated animate__fadeInRight sm:flex ${
-          open ? "" : "hidden"
-        }`}
+        className={`nav-item animate__animated animate__fadeInRight sm:flex ${open ? "" : "hidden"
+          }`}
       >
         <li>
           <NavItem path="/" setOpen={setOpen}>
@@ -26,12 +25,12 @@ function Navbar() {
           </NavItem>
         </li>
         <li>
-          <NavItem path="/about" setOpen={setOpen}>
+          <NavItem path="/about-us" setOpen={setOpen}>
             About
           </NavItem>
         </li>
         <li>
-          <NavItem path="/contact" setOpen={setOpen}>
+          <NavItem path="/contact-us" setOpen={setOpen}>
             Contact Us
           </NavItem>
         </li>

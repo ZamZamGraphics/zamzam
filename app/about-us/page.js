@@ -1,15 +1,15 @@
-import Services from "@/app/components/services/Services";
+import AboutUs from "@/app/components/about-us/AboutUs";
 import Glance from "@/app/components/glance/Glance";
 import RequestForQuote from "@/app/components/RequestForQuote";
 
-function ServicesPage() {
+function AboutPage() {
   return (
     <>
-      <Services />
+      <AboutUs />
       <Glance />
       <RequestForQuote />
     </>
   );
 }
 
-export default ServicesPage;
+export default AboutPage;
