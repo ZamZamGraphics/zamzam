@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply relative text-base font-light text-slate-600 bg-[url(/6093.svg)] bg-top bg-no-repeat bg-contain
+  }
+}
+
 @layer components {
   .nav-item {
     @apply flex basis-auto flex-col sm:flex-row text-xl;

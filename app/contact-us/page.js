@@ -29,7 +29,7 @@ function ContactPage() {
           You are welcome to visit our office for any information. You can also reach us through the hotline number or messenger.
         </p>
       </div>
-      <div className="w-full md:w-3/4 bg-white mx-auto p-10 rounded-2xl border border-gray-200">
+      <div className="w-full md:w-3/4 bg-white/60 mx-auto p-10 rounded-2xl">
         <h3 className="text-2xl text-black font-bold">Inbox your queries</h3>
         <form
           ref={formRef}
@@ -75,7 +75,7 @@ function ContactPage() {
               disabled={pending}
               className="py-3 px-8 rounded-full bg-blue-700 hover:bg-blue-800 disabled:bg-blue-400 text-white"
             >Submit</button>
-            {state.success && <p className="py-3 px-8 bg-green-100 text-green-800 font-semibold border border-green-300 w-full rounded-full">Form submitted successfully!</p>}
+            {state.success && <p className="py-3 px-8 bg-green-100 text-green-800 font-semibold border border-green-300 w-full rounded-full">Thank you for your message. It has been sent.</p>}
           </div>
         </form>
       </div>

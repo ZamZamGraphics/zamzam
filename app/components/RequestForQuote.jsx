@@ -1,10 +1,14 @@
 import Link from "next/link"
 import { IconBrandWhatsapp } from '@tabler/icons-react';
+import Animated from "@/app/components/Animated";
 
 function RequestForQuote() {
     return (
         <div className="container py-10 px-5">
-            <div className="w-full md:w-3/4 text-center bg-black mx-auto p-10 rounded-2xl">
+            <Animated
+                classes="w-full md:w-3/4 text-center bg-black mx-auto p-10 rounded-2xl"
+                animateClass="animate__fadeInDown"
+            >
                 <h3 className="text-3xl text-white font-medium">
                     Have any question about us or get a product request?
                 </h3>
@@ -20,7 +24,7 @@ function RequestForQuote() {
                         Request For Quote
                     </Link>
                 </div>
-            </div>
+            </Animated>
         </div>
     )
 }

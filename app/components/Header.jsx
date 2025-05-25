@@ -19,10 +19,10 @@ function Header() {
   });
 
   const stickyClass =
-    "w-full sticky top-0 z-10 animate__animated animate__fadeInDown";
+    "w-full bg-white/85 shadow sticky top-0 z-10 animate__animated animate__fadeInDown";
 
   return (
-    <nav className={`bg-white shadow ${scroll ? stickyClass : ""}`}>
+    <nav className={`${scroll ? stickyClass : ""}`}>
       <div className="container">
         <div className="flex flex-wrap items-center justify-between">
           <div className="p-3 animate__animated animate__fadeInLeft">
