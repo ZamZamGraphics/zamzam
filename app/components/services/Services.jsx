@@ -17,7 +17,7 @@ function Services() {
         </p>
       </div>
       <div className="px-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-        <Animated classes="service-box" animateClass="animate__fadeInRight">
+        <Animated classes="service-box" animateClass="animate__fadeInDown">
           <div className="p-5 flex items-center justify-center">
             <Image src={WebDesignIcon} width={80} alt="Web Design" />
           </div>
@@ -32,7 +32,7 @@ function Services() {
         </Animated>
         <Animated
           classes="service-box"
-          animateClass="animate__fadeInRight animate__delay-200ms"
+          animateClass="animate__fadeInDown animate__delay-200ms"
         >
           <div className="p-5 flex items-center justify-center">
             <Image src={ServerIcon} width={80} alt="Web Design" />
@@ -48,7 +48,7 @@ function Services() {
         </Animated>
         <Animated
           classes="service-box"
-          animateClass="animate__fadeInRight animate__delay-300ms"
+          animateClass="animate__fadeInDown animate__delay-300ms"
         >
           <div className="p-5 flex items-center justify-center">
             <Image src={EcommerceIcon} width={80} alt="Web Design" />
@@ -64,7 +64,7 @@ function Services() {
         </Animated>
         <Animated
           classes="service-box"
-          animateClass="animate__fadeInRight animate__delay-500ms"
+          animateClass="animate__fadeInDown animate__delay-500ms"
         >
           <div className="p-5 flex items-center justify-center">
             <Image src={GraphicDesignIcon} width={80} alt="Web Design" />

@@ -1,13 +1,7 @@
-import React from 'react'
-import Animated from '@/app/components/Animated'
-
 function AboutUs() {
     return (
         <div className="container py-10 px-5">
-            <Animated
-                classes='w-full md:w-3/4 text-center bg-white/50 mx-auto p-10 rounded-2xl'
-                animateClass="animate__slideInDown"
-            >
+            <div className='w-full md:w-3/4 text-center bg-white/50 mx-auto p-10 rounded-2xl'>
                 <h3 className="text-3xl text-black font-bold">About us</h3>
                 <p className="p-3">
                     Our company specializes in creating visually stunning and highly
@@ -21,7 +15,7 @@ function AboutUs() {
                     you establish a compelling online presence that drives engagement
                     and growth.
                 </p>
-            </Animated>
+            </div>
         </div>
     )
 }

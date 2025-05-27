@@ -8,7 +8,7 @@ function HeroSection() {
             <div className="flex w-full gap-10 flex-col md:flex-row items-center">
                 <div className="basis-2/4 px-5">
                     <Animated animateClass="animate__fadeInLeft">
-                        <span className="px-3 py-1 text-base md:text-xl font-medium rounded-full bg-black text-white">
+                        <span className="text-xl font-medium text-green-700">
                             Best Web Design Company in Brahmanbaria
                         </span>
                     </Animated>

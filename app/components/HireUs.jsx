@@ -1,5 +1,4 @@
 import { IconCloudCog, IconMessage, IconCloudCheck } from '@tabler/icons-react';
-import Animated from '@/app/components/Animated';
 
 function HireUs() {
     return (
@@ -15,10 +14,7 @@ function HireUs() {
                 </p>
             </div>
             <div className="px-5 grid grid-cols-1 md:grid-cols-3 gap-5">
-                <Animated
-                    classes='flex items-center'
-                    animateClass="animate__fadeInRight"
-                >
+                <div className='flex items-center'>
                     <span className='bg-lime-500 text-white p-5 rounded-s-2xl'>
                         <IconCloudCog stroke={1.5} className='size-10' />
                     </span>
@@ -30,11 +26,8 @@ function HireUs() {
                             We are working in the local and global markets since 2015.
                         </p>
                     </div>
-                </Animated>
-                <Animated
-                    classes='flex items-center'
-                    animateClass="animate__fadeInRight animate__delay-200ms"
-                >
+                </div>
+                <div className='flex items-center'>
                     <span className='bg-blue-700 text-white p-5 rounded-s-2xl'>
                         <IconMessage stroke={1.5} className='size-10' />
                     </span>
@@ -46,11 +39,8 @@ function HireUs() {
                             We provide runtime support to our customers support.
                         </p>
                     </div>
-                </Animated>
-                <Animated
-                    classes='flex items-center'
-                    animateClass="animate__fadeInRight animate__delay-300ms"
-                >
+                </div>
+                <div className='flex items-center'>
                     <span className='bg-lime-500 text-white p-5 rounded-s-2xl'>
                         <IconCloudCheck stroke={1.5} className='size-10' />
                     </span>
@@ -62,7 +52,7 @@ function HireUs() {
                             We are 100% dedicated to the customer project deadline.
                         </p>
                     </div>
-                </Animated>
+                </div>
             </div>
         </div>
     )
